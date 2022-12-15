@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    {
+      "name": "a",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "b",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "c",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "d",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "h0",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "h1",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "name": "hashpartial0a",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpartial0b",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpartial1a",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpartial1b",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashfulla",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashfullb",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "balancefull",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "balancepartial0",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "balancepartial1",
+      "public": false,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
+}

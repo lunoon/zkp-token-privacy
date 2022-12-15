@@ -1,0 +1,30 @@
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+def main( \
+  field hashpartial0a, \
+  field hashpartial0b, \
+  field hashpartial1a, \
+  field hashpartial1b, \
+  field hashfulla, \
+  field hashfullb, \
+  private field balancefull, \
+  private field balancepartial0, \
+  private field balancepartial1) {
+    field[2] h = sha256packed([0, 0, 0, balancefull]);
+    assert(h[0] == hashpartial0a);
+    assert(h[1] == hashpartial0b);
+
+    field[2] h0 = sha256packed([0, 0, 0, balancepartial0]);
+    assert(h0[0] == hashpartial1a);
+    assert(h0[1] == hashpartial1b);
+
+    field[2] h1 = sha256packed([0, 0, 0, balancepartial1]);
+    assert(h1[0] == hashfulla);
+    assert(h1[1] == hashfullb);
+
+    assert(balancefull > 0);
+    assert(balancepartial0 > 0);
+    assert(balancepartial1 > 0);
+    assert(balancefull == balancepartial0 + balancepartial1);
+    return;
+}

@@ -1,0 +1,982 @@
+{
+	"info": {
+		"_postman_id": "ebc7fe56-8df4-4c02-bb1b-4d32a84f37d3",
+		"name": "zk-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registry",
+			"item": [
+				{
+					"name": "create registry entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"witnessId\": \"bc5dc778-e4ea-4031-9abc-fbbca2c83590\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registry/createRegistryEntry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"createRegistryEntry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create registry entry",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"witnessId\": \"50fca39d-20da-4bd2-8d58-2ea5ce719d4f\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/registry/createRegistryEntry",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"createRegistryEntry"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1117"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45d-nvysvnUWEke86S0gFPouIpmSuIY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 17:33:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fp\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f050fca39d20da4bd28d582ea5\",\n    \"receipt\": {\n        \"to\": \"0x5b1869D9A4C187F2EAa108f3062412ecf0526b24\",\n        \"from\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\",\n        \"contractAddress\": null,\n        \"transactionIndex\": 0,\n        \"gasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x014c8b\"\n        },\n        \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n        \"blockHash\": \"0xf1f2bc14a73fd084277f83fe6e92639c6987e5f0e62d348e9cae8b60843fd884\",\n        \"transactionHash\": \"0x30476aed86e48482650cf3ab1183a0119549fc7fa607d6170992de4daf5de55c\",\n        \"logs\": [],\n        \"blockNumber\": 4,\n        \"confirmations\": 1,\n        \"cumulativeGasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x014c8b\"\n        },\n        \"status\": 1,\n        \"type\": 0,\n        \"byzantium\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "transfer registry entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fp\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b37bf53cadc14195a1b6318b\",\n    \"to\": \"0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registry/transferRegistryEntry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"transferRegistryEntry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "transfer registry entry",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fp\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b37bf53cadc14195a1b6318b\",\n    \"to\": \"0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/registry/transferRegistryEntry",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"transferRegistryEntry"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1166"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48e-qUymjKBGHPLGy8Zl7oLpFtTr1x8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 13:55:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fp\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b37bf53cadc14195a1b6318b\",\n    \"receipt\": {\n        \"to\": \"0x5b1869D9A4C187F2EAa108f3062412ecf0526b24\",\n        \"from\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\",\n        \"contractAddress\": null,\n        \"transactionIndex\": 0,\n        \"gasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x55b8\"\n        },\n        \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n        \"blockHash\": \"0x7b30facaf960be192f8951775002c9f98ca471ce77e5ff0084f5b74df2f2324a\",\n        \"transactionHash\": \"0xe7405ab9cf6edc336a11538a0091bbbe6dd5bf340ef0b97541a041b7a7078b62\",\n        \"logs\": [],\n        \"blockNumber\": 4,\n        \"confirmations\": 1,\n        \"cumulativeGasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x55b8\"\n        },\n        \"status\": 1,\n        \"type\": 0,\n        \"byzantium\": true\n    },\n    \"owner\": \"0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b\"\n}"
+						}
+					]
+				},
+				{
+					"name": "split registry entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fpFull\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0bc5dc778e4ea40319abcfbbc\",\n    \"proof\": {\n        \"a\": [\n            \"0x2fb75b2b16ade2aaccf596c9ce2cef3be5d184895e151785d16ba92b2124819c\",\n            \"0x0dfb6357fd3389f450069d74713d2deb0ed72af413749c003b9929db6db0b35a\"\n        ],\n        \"b\": [\n            [\n                \"0x1359e60c4a383868904a550a34616039f9f8257273f2986e6c15febd041d00e1\",\n                \"0x0524f46e2e81200e2263ea3bf8b91ce5c841631381e3e6ef71908425b4f57f0b\"\n            ],\n            [\n                \"0x195de0e7af96780bf3032e4b7dd2900c8f1050acefddba234b51cff015dcb34a\",\n                \"0x21ffba1c0345b6d36c98390a1c6febde19acd2c61a44a3e8a61976330b54869d\"\n            ]\n        ],\n        \"c\": [\n            \"0x0b0c39038a8f264f56410076971a24e7cad2dab1db770db451899650ab4241ca\",\n            \"0x235645470ccf0bd0d7898f08634664720a50cb0ad01db14bd3229e9d9f7aec32\"\n        ]\n    },\n    \"witnessId0\": \"6c3eae84-1c4b-439a-affc-d8e6283fd7d4\",\n    \"witnessId1\": \"7492f14a-630c-4e17-8f74-efea46b27bc3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registry/splitRegistryEntry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"splitRegistryEntry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "split registry entry",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fpFull\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0e1b993e20b0f4278b7275511\",\n    \"proof\": {\n        \"a\": [\n            \"0x3032e13017663cbd2fab06d9259eef705160ed09fbc8c76d5090621078a3eb79\",\n            \"0x2da57c010bf7bb7bc4ba0775e988b07af933b44d3fb62c9169a3953813171e55\"\n        ],\n        \"b\": [\n            [\n                \"0x1f310ba9a2e4574b8167e5e6f2b53caa57fc53d2ca1620479ac995a5ab6708d0\",\n                \"0x2e452ef729c8d908dbd0e8b3982f6cd617e1730724988ffbdba573c7d8f5de6e\"\n            ],\n            [\n                \"0x0316ee5caac3674017ade6522741eb0f722f8884143ad61caba29ed347546e5e\",\n                \"0x1979d83b8a0c494986f475409c6aa486367cf70fedd18629ae9f67a5b509764e\"\n            ]\n        ],\n        \"c\": [\n            \"0x19ee6fae694bd69cbe2f834bd6b6c1ceaa35b9f9e788e38de54813f74ba99a7a\",\n            \"0x23eabebd6b6b1ba854025e1ddcb74a5878a806c8cc10f1695032dcf7cf2f5180\"\n        ]\n    },\n    \"witnessId0\": \"a219a9ad-3bc5-41b2-bf82-08dd9b5f4fc9\",\n    \"witnessId1\": \"b5dbc2e4-14b4-46c4-b031-59e00a814d09\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/registry/splitRegistryEntry",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"splitRegistryEntry"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1189"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a5-vfsujV7ECM+DRtOzm8Y1kT62650\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 13:50:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fp0\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0a219a9ad3bc541b2bf8208dd\",\n    \"fp1\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b5dbc2e414b446c4b03159e0\",\n    \"receipt\": {\n        \"to\": \"0x5b1869D9A4C187F2EAa108f3062412ecf0526b24\",\n        \"from\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\",\n        \"contractAddress\": null,\n        \"transactionIndex\": 0,\n        \"gasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x6d48\"\n        },\n        \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n        \"blockHash\": \"0xaa376fad03a196e841378a50872b6f1df074ee935dba54459b8618fc91b08e22\",\n        \"transactionHash\": \"0x2da12370c37cb6401bbefa10eec12b5a728ebf80a5d98f8a0930ede069355e00\",\n        \"logs\": [],\n        \"blockNumber\": 1,\n        \"confirmations\": 1,\n        \"cumulativeGasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x6d48\"\n        },\n        \"status\": 1,\n        \"type\": 0,\n        \"byzantium\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "join registry entry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fp0\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0a219a9ad3bc541b2bf8208dd\",\n    \"fp1\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b5dbc2e414b446c4b03159e0\",\n    \"witnessId\": \"e1b993e2-0b0f-4278-b727-5511c14d9905\",\n    \"proof\": {\n        \"a\": [\n            \"0x2f3319fd881b7774521f380396ce2a5cb433494907bc9d90d1cdc04735ea4b5e\",\n            \"0x10515649a5bfa3104bd5358154a29a8c20998b380628e65ea398ea13d78df048\"\n        ],\n        \"b\": [\n            [\n                \"0x12833a2f5ae0802ac8287c3182af4d41ba668a0956a25360083399a82e6941be\",\n                \"0x0d0f81e5d0710809afc2fc532a55faa42036d7bc75e4caa7dc25c08d0b27dd2b\"\n            ],\n            [\n                \"0x1f52c8d3f59a7e5de4c0f565cfb410217cf5503ccb91d88feb87fffa8495102a\",\n                \"0x2deef5d3133e11b9b30120fe4885d9dd2dddd9e26fef4e1fa8de9eb16c0854e3\"\n            ]\n        ],\n        \"c\": [\n            \"0x22b2d5d19d0b5b2b551fa1425d1a4c6d7e8cd4bd496d45f7290edf416df8420c\",\n            \"0x279653f517198778819558421bf884e5c5e6d07237a362798c46f2797fd4e64e\"\n        ]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/registry/joinRegistryEntry",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"joinRegistryEntry"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "join registry entry",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fp0\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0a219a9ad3bc541b2bf8208dd\",\n    \"fp1\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b5dbc2e414b446c4b03159e0\",\n    \"witnessId\": \"e1b993e2-0b0f-4278-b727-5511c14d9905\",\n    \"proof\": {\n        \"a\": [\n            \"0x2f3319fd881b7774521f380396ce2a5cb433494907bc9d90d1cdc04735ea4b5e\",\n            \"0x10515649a5bfa3104bd5358154a29a8c20998b380628e65ea398ea13d78df048\"\n        ],\n        \"b\": [\n            [\n                \"0x12833a2f5ae0802ac8287c3182af4d41ba668a0956a25360083399a82e6941be\",\n                \"0x0d0f81e5d0710809afc2fc532a55faa42036d7bc75e4caa7dc25c08d0b27dd2b\"\n            ],\n            [\n                \"0x1f52c8d3f59a7e5de4c0f565cfb410217cf5503ccb91d88feb87fffa8495102a\",\n                \"0x2deef5d3133e11b9b30120fe4885d9dd2dddd9e26fef4e1fa8de9eb16c0854e3\"\n            ]\n        ],\n        \"c\": [\n            \"0x22b2d5d19d0b5b2b551fa1425d1a4c6d7e8cd4bd496d45f7290edf416df8420c\",\n            \"0x279653f517198778819558421bf884e5c5e6d07237a362798c46f2797fd4e64e\"\n        ]\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/registry/joinRegistryEntry",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"joinRegistryEntry"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1113"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"459-WZqafxwqm9GGbC+zB6SlMlRJlnA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 13:52:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fp\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0e1b993e20b0f4278b7275511\",\n    \"receipt\": {\n        \"to\": \"0x5b1869D9A4C187F2EAa108f3062412ecf0526b24\",\n        \"from\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\",\n        \"contractAddress\": null,\n        \"transactionIndex\": 0,\n        \"gasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x6ac8\"\n        },\n        \"logsBloom\": \"0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\",\n        \"blockHash\": \"0x4df6b2254981afbb4f1ab3f1e3484442b5bfdddefcdc69cdbb1f3a8ee1730222\",\n        \"transactionHash\": \"0x98ea73c4a665898ce8af48c813283415228d4faedf543556e074adddd4677247\",\n        \"logs\": [],\n        \"blockNumber\": 2,\n        \"confirmations\": 1,\n        \"cumulativeGasUsed\": {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x6ac8\"\n        },\n        \"status\": 1,\n        \"type\": 0,\n        \"byzantium\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get registry entry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/registry/fingerprint/0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f04825b03fcb0a4a6a97cfa5a6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"fingerprint",
+								"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f04825b03fcb0a4a6a97cfa5a6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get registry entry",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/registry/fingerprint/0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f04825b03fcb0a4a6a97cfa5a6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"fingerprint",
+										"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f04825b03fcb0a4a6a97cfa5a6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-A+MbLZ6dubhN21HT7rHEilucvxg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 14:18:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\",\n    [\n        {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x3b52df36c2e3c6682445e31c2c770a43\"\n        },\n        {\n            \"type\": \"BigNumber\",\n            \"hex\": \"0x6801337f72d7dcd599aca098bdea9523\"\n        }\n    ]\n]"
+						}
+					]
+				},
+				{
+					"name": "get registry entry private data Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/registry/private/fingerprint/0x2739429554022272428451511673923513651832098637173486617888097002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"private",
+								"fingerprint",
+								"0x2739429554022272428451511673923513651832098637173486617888097002"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get registry entry private data Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/registry/private/fingerprint/0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f055a16378a24d40aca6227e0d",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"private",
+										"fingerprint",
+										"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f055a16378a24d40aca6227e0d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "188"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bc-TeSxdnTBCGKscmo9xwbp+xxojdk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 13:29:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"fingerprint\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f055a16378a24d40aca6227e0d\",\n    \"witnessId\": \"55a16378-a24d-40ac-a622-7e0d0f720918\",\n    \"owner\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get all entries of an address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/registry/summary/0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"registry",
+								"summary",
+								"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all entries of an address",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/registry/summary/0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"registry",
+										"summary",
+										"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "802"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"322-7jEz9elh45J305epaXh7TBtjagU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 12 Nov 2022 17:50:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"items\": [\n        {\n            \"registryEntry\": {\n                \"fingerprint\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f04825b03fcb0a4a6a97cfa5a6\",\n                \"witnessId\": \"4825b03f-cb0a-4a6a-97cf-a5a606a2d1ff\",\n                \"owner\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\"\n            },\n            \"witness\": {\n                \"witnessId\": \"4825b03f-cb0a-4a6a-97cf-a5a606a2d1ff\",\n                \"witness\": \"14\",\n                \"salt\": \"6\",\n                \"hash0\": \"78854747409687737475675088423661013571\",\n                \"hash1\": \"138245948358898464188093564746329658659\"\n            }\n        },\n        {\n            \"registryEntry\": {\n                \"fingerprint\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f050fca39d20da4bd28d582ea5\",\n                \"witnessId\": \"50fca39d-20da-4bd2-8d58-2ea5ce719d4f\",\n                \"owner\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0\"\n            },\n            \"witness\": {\n                \"witnessId\": \"50fca39d-20da-4bd2-8d58-2ea5ce719d4f\",\n                \"witness\": \"29\",\n                \"salt\": \"7\",\n                \"hash0\": \"168240992268651131978882285609812510908\",\n                \"hash1\": \"321133203681242262521694210568664964756\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "zkp",
+			"item": [
+				{
+					"name": "compute witness hash",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"witness\": \"10\",\n    \"salt\": \"10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/zkp/computeWitnessHash",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"zkp",
+								"computeWitnessHash"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "compute witness hash",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"witness\": \"120\",\n    \"salt\": \"10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/zkp/computeWitnessHash",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"zkp",
+										"computeWitnessHash"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-ZwO/535PRCqknKuqNQj+iM7v4kQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Oct 2022 15:58:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"witnessId\": \"1ac72d58-f283-4301-bb57-9a31ed559f94\"\n}"
+						}
+					]
+				},
+				{
+					"name": "generate proof for split",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fpFull\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0e1b993e20b0f4278b7275511\",\n    \"witnessId0\": \"a219a9ad-3bc5-41b2-bf82-08dd9b5f4fc9\",\n    \"witnessId1\": \"b5dbc2e4-14b4-46c4-b031-59e00a814d09\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/zkp/createProofSplit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"zkp",
+								"createProofSplit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "generate proof for split",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fpFull\": \"0xFFcf8FDE21250417667045671992885968672834786092421449470690837392\",\n    \"witnessId0\": \"c7acbfda-f7f1-41c1-86c3-25d110c746cc\",\n    \"witnessId1\": \"3b8bae25-8da9-4c97-9004-bd679287ed86\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/zkp/createProofSplit",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"zkp",
+										"createProofSplit"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "585"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"249-/nB+H7Az7thliwPZGE/GdCr2d+M\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Oct 2022 17:22:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"proof\": {\n        \"a\": [\n            \"0x12a54427b3a2b5602277a3af181f4b18cc89140e06584df1d49e88dd78da8e3d\",\n            \"0x1dbead963025d9396b23101166b14a0c7d9f15f5066bcf1d6553283d38f713d6\"\n        ],\n        \"b\": [\n            [\n                \"0x076926edb79926298e37a71a0ab776b2ff7b4120fa28535df4e51bf2b6a712cb\",\n                \"0x05d08d9588055c0480f4263aedd15b03d96ac0ecd8964f6443924212d7c947dc\"\n            ],\n            [\n                \"0x0d6d0909b466b0f682a69258ca0231a9af3a290c6862dc665cbed4f9da4fd8fc\",\n                \"0x2e5ecbee7ed9865a4080bdb6eb06b0795882a59e46d2f48795d3cce80948b6c1\"\n            ]\n        ],\n        \"c\": [\n            \"0x164f7b46d5a7f61501cd76a9ea7f584632ab7ec4f197313c9f42a08fb5658298\",\n            \"0x12b4e49aadb16f24196f5a4dc3400fb3fe6df7143b0d2828627e46db74d456b9\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "generate proof for join",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fp0\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0a219a9ad3bc541b2bf8208dd\",\n    \"fp1\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0b5dbc2e414b446c4b03159e0\",\n    \"witnessId\": \"e1b993e2-0b0f-4278-b727-5511c14d9905\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/zkp/createProofJoin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"zkp",
+								"createProofJoin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "generate proof for join",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"fp0\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0fefcfa21c15145a8b09fe76c\",\n    \"fp1\": \"0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f028325cf87ffd4c82b28c3559\",\n    \"witnessId\": \"55a16378-a24d-40ac-a622-7e0d0f720918\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/zkp/createProofJoin",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"zkp",
+										"createProofJoin"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "585"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"249-ioa+BTCAs6F3j1CYXPAvu8oC43E\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 29 Oct 2022 13:28:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"proof\": {\n        \"a\": [\n            \"0x01c780a69b6c55c732cb40b4e375adcfef586b2edf8d693d94ca9e2907242b9b\",\n            \"0x210a56f14636ab394777a01471512ecba3806ac27f09ee7741763e5e46fdeff3\"\n        ],\n        \"b\": [\n            [\n                \"0x09f100e119b90f13819ea61aa072c0ddffe6f7f9e4217781e822aca8bf3716a3\",\n                \"0x1414b176397cb385360cd92384ba3ddc4371bed4727762d727f4a8f52e9509d5\"\n            ],\n            [\n                \"0x0033e7098837a9cbd50dc4a169ea252c185e1f03251d9a00cd86903ffb885625\",\n                \"0x23018495c9522e79121661e696b94b425b1d7f98daccee2a2902ef3d09b17801\"\n            ]\n        ],\n        \"c\": [\n            \"0x08e3a851336e97a1a05495d22c44fbb700225293ac87aa634b147725829884a7\",\n            \"0x136e0d9580ec24aa3ad21b1cf0baba86a8d0ab6f96108c32cd4539185787cb82\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get witness data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/zkp/private/witness/c7acbfda-f7f1-41c1-86c3-25d110c746cc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"zkp",
+								"private",
+								"witness",
+								"c7acbfda-f7f1-41c1-86c3-25d110c746cc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get witness data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/zkp/private/witness/c7acbfda-f7f1-41c1-86c3-25d110c746cc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"zkp",
+										"private",
+										"witness",
+										"c7acbfda-f7f1-41c1-86c3-25d110c746cc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-FVK9pkGsWAzwlwNMBwNblacQpq4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Oct 2022 15:56:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"witnessId\": \"c7acbfda-f7f1-41c1-86c3-25d110c746cc\",\n    \"witness\": \"40\",\n    \"salt\": \"20\",\n    \"hash0\": \"273942955402227242845151167392351365183\",\n    \"hash1\": \"209863717348661788809700235508684412611\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

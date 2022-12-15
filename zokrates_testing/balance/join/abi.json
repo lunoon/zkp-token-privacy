@@ -1,0 +1,55 @@
+{
+  "inputs": [
+    {
+      "name": "hashpre0a",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpre0b",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpre1a",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpre1b",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashposta",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "hashpostb",
+      "public": true,
+      "type": "field"
+    },
+    {
+      "name": "balancepre0",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "balancepre1",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "balancepost",
+      "public": false,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
+}

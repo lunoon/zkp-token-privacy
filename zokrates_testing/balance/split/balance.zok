@@ -1,0 +1,18 @@
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+def main(field hashpre0, field hashpre1, field hashpost0a, field hashpost0b, field hashpost1a, field hashpost1b, private field balancepre, private field balancepost0, private field balancepost1) {
+    field[2] h = sha256packed([0, 0, 0, balancepre]);
+    assert(h[0] == hashpre0);
+    assert(h[1] == hashpre1);
+
+    field[2] h0 = sha256packed([0, 0, 0, balancepost0]);
+    assert(h0[0] == hashpost0a);
+    assert(h0[1] == hashpost0b);
+
+    field[2] h1 = sha256packed([0, 0, 0, balancepost1]);
+    assert(h1[0] == hashpost1a);
+    assert(h1[1] == hashpost1b);
+
+    assert(balancepre == balancepost0 + balancepost1);
+    return;
+}

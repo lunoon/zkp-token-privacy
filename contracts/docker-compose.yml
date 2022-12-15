@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  zk-ganache:
+    container_name: zk-ganache
+    image: trufflesuite/ganache-cli:latest
+    ports:
+      - 8545:8545
+    entrypoint: 
+      - node
+      - /app/ganache-core.docker.cli.js
+      - --deterministic
+
+  zk-bootstrap:
+    container_name: zk-contracts-bootstrap
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/zk-contracts
+      - node_modules:/opt/zk-contracts/node_modules
+      - ../zokrates/out/Verifier.sol:/opt/zk-contracts/contracts/zokrates/Verifier.sol
+      - ../server/export:/opt/zk-contracts/export
+    depends_on:
+      - zk-ganache
+    stdin_open: true
+    tty: true
+    command: sh -c "sleep 10 && truffle migrate"
+
+volumes:
+  node_modules:
+
+networks:
+  default:
+    name: 'zk-network'
+    driver: bridge

@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  server:
+    container_name: zk-server
+    build:
+      context: .
+      target: development
+    restart: unless-stopped
+    env_file:
+      - ./export/config.env
+    volumes:
+      - .:/opt/server
+      - ./dist:/opt/server/dist
+      - node_modules:/opt/server/node_modules
+      - ../zokrates/out:/opt/zokrates
+    ports:
+      - 3000:3000
+    stdin_open: true
+    command: npm run start:dev
+    tty: true
+
+  server-db:
+    container_name: zk-server-db
+    image: postgres:14.5
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+    #volumes:
+    #  - data:/var/lib/postgresql/data
+
+volumes:
+  node_modules:
+
+networks:
+  default:
+    name: 'zk-network'
+    driver: bridge
+    external: true
+

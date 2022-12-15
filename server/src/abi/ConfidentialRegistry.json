@@ -1,0 +1,303 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "v",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "fp",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_h0",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_h1",
+				"type": "uint256"
+			}
+		],
+		"name": "create",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "entries",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "h0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "h1",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IConfidentialRegistry.BalanceHash",
+				"name": "balanceHash",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "sumFp",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fp0",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fp1",
+				"type": "bytes32"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "h0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "h1",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IConfidentialRegistry.BalanceHash",
+				"name": "balHashFull",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Pairing.G1Point",
+						"name": "a",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct Pairing.G2Point",
+						"name": "b",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Pairing.G1Point",
+						"name": "c",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Verifier.Proof",
+				"name": "p",
+				"type": "tuple"
+			}
+		],
+		"name": "join",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "sumFp",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fp0",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fp1",
+				"type": "bytes32"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "h0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "h1",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IConfidentialRegistry.BalanceHash",
+				"name": "balHash0",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "h0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "h1",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IConfidentialRegistry.BalanceHash",
+				"name": "balHash1",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Pairing.G1Point",
+						"name": "a",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256[2]",
+								"name": "X",
+								"type": "uint256[2]"
+							},
+							{
+								"internalType": "uint256[2]",
+								"name": "Y",
+								"type": "uint256[2]"
+							}
+						],
+						"internalType": "struct Pairing.G2Point",
+						"name": "b",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "X",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "Y",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Pairing.G1Point",
+						"name": "c",
+						"type": "tuple"
+					}
+				],
+				"internalType": "struct Verifier.Proof",
+				"name": "p",
+				"type": "tuple"
+			}
+		],
+		"name": "split",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "fp",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "transfer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

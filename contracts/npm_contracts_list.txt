@@ -1,0 +1,5 @@
+contracts@1.0.0 /Users/nathaliezarbock/dev/mine/thesis/project/contracts
+├── ethers@5.6.4
+├── truffle@5.5.25
+└── zokrates-js@1.1.1
+
